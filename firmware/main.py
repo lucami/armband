@@ -4,7 +4,7 @@ import network
 import socket
 
 port_dest = 6660
-addr_dest = '192.168.1.3'
+addr_dest = '192.168.1.14'
 dest = (addr_dest, port_dest)
 
 f=open("ID","r")
