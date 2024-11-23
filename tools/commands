@@ -1,3 +1,14 @@
+*****************
+PINOUT
+
+TX		GND
+CH_PD	Pin2
+RST		Pin0
+Vcc		Rx
+*****************
+
+
 screen /dev/ttyUSB0 115200
 ampy --port /dev/ttyUSB0 ls 
 ampy --port /dev/ttyUSB0 put ../firmware/main.py 
+python3 webrepl_cli.py ../../firmware/main.py 192.168.1.16:main.py
